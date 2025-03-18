@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FindMissingNumber {
-    public int missingNumber(int[] arr){
+    public int missingNumber(Integer[] arr){
         Arrays.sort(arr);
         for (int i = 1; i < arr.length -1 ;i++){
             if (arr[i] + 1 != arr[i+1] ){
